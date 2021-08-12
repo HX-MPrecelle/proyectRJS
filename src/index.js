@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//Tener la variable React en scope
+import React from "react"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//Tener la variable ReactDOM en scope
+import ReactDOM from "react-dom"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//Tener un elemento de React (componente)
+import App from "./App"
+
+//Tener una función render corriendo
+ReactDOM.render(<App/>, document.getElementById('root'))
+
+//NO SE PUEDEN IMPORTAR ARCHIVOS FUERA DE LA CARPETA .SRC SI SE CREA CON create-react-app
