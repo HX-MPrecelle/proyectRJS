@@ -1,9 +1,11 @@
-import NavBar from "./NavBar"
+//Components
+import NavBar from "./components/NavBar"
+
 
 const App = () => {
     return (
         <>
-            <NavBar />
+            <NavBar brandName="HW Market"/>
         </>
     )
 }
