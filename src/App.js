@@ -4,10 +4,11 @@ import ItemListContainer from './components/ItemListContainer';
 
 
 const App = () => {
+
     return (
         <>
             <NavBar brandName="HW Market"/>
-            <ItemListContainer text='¡Bienvenido a la aplicación de React de Martín Precelle!' />
+            <ItemListContainer text='Productos destacados' />
         </>
     )
 }
