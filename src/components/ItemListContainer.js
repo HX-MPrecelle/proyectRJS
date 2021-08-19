@@ -1,9 +1,9 @@
 //Import ItemListContainer.css
 import './ItemListContainer.css';
 
-const ItemListContainer = () => {
+const ItemListContainer = ({text}) => {
     return ( 
-        <h3 className="posH3">¡Bienvenido a la aplicación de React de Martín Precelle!</h3>
+        <h3 className="posH3">{text}</h3>
      );
 }
  
