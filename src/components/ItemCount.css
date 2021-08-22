@@ -1,0 +1,17 @@
+.posCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.sepCount {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.posAgregar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
