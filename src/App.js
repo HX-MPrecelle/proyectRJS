@@ -7,7 +7,7 @@ const App = () => {
 
     return (
         <>
-            <NavBar brandName="HW Market"/>
+            <NavBar brandName='HW Market'/>
             <ItemListContainer text='Productos destacados' />
         </>
     )
