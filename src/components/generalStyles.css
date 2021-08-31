@@ -1,0 +1,14 @@
+.posCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  .posCardCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    width: 10%;
+  }

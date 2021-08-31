@@ -1,8 +1,8 @@
 //Import ItemListContainer.css
 import React, { useEffect, useState } from 'react';
-import ItemList from './ItemList'
-import Spinner from 'react-bootstrap/Spinner'
-import './ItemListContainer.css';
+import ItemList from './ItemList';
+import Spinner from 'react-bootstrap/Spinner';
+import './generalStyles.css';
 
 const Products = () => {
 
