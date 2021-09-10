@@ -25,8 +25,6 @@ const ItemDetail = ({ data }) => {
         </Row>
         </Container>
      );
-
-
 }
  
 export default ItemDetail;

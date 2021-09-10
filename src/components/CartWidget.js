@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const CartWidget = () => {
     return (
-        <i href="#" className="material-icons">shopping_cart</i>
+        <Link to="/cart" className="decoBrand"><i className="material-icons">shopping_cart</i></Link>
     )
 }
 
