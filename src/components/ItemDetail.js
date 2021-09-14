@@ -1,9 +1,9 @@
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import idImg from '../img/id1.jpeg';
+import ItemCount from './ItemCount';
 import './generalStyles.css'
 
 const ItemDetail = ({ data }) => {
@@ -18,7 +18,7 @@ const ItemDetail = ({ data }) => {
                 <Card.Title>{data.nombre}</Card.Title>
                 <Card.Text>{data.description}</Card.Text>
                 <Card.Title>${data.precio}</Card.Title>
-                <Button variant="outline-secondary">Agregar al carrito</Button>
+                <ItemCount stock={data.stock} initial={1} onAdd={(quantity) => alert(quantity)} />
             </Card.Body>
             </Card>
             </Col>
