@@ -5,10 +5,12 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 
 //Import routing
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
 
 const App = () => {
 
     return (
+        <CartProvider>
         <BrowserRouter>
             <NavBar brandName='HW Market'/>
             <Switch>
@@ -17,6 +19,7 @@ const App = () => {
                 <Route path="/item/:id" component={ItemDetailContainer} />
             </Switch>
         </BrowserRouter>
+        </CartProvider>
     )
 }
 
