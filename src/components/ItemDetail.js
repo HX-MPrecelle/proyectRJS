@@ -23,8 +23,8 @@ const ItemDetail = ({ data }) => {
     return (
         <Container fluid="md">
           <Row>
-            <Col>
-              <Card>
+            <Col className="posCenter">
+              <Card style={{ width: "20vw" }}>
                 <Card.Img variant="top" src={idImg} />
                 <Card.Body key={data.id}>
                   <Card.Title>{data.nombre}</Card.Title>
@@ -33,12 +33,17 @@ const ItemDetail = ({ data }) => {
                   {!terminar ? (
                     <ItemCount stock={data.stock} initial={1} onAdd={onAdd} />
                   ) : (
-                    <div>
+                    <div className="posCenter">
                       <Link to="/cart">
                         <Button variant="outline-secondary">Ver carrito</Button>
                       </Link>
                     </div>
                   )}
+                  <div className="posCenter">
+                    <Link to="/">
+                        <Button variant="outline-secondary">Volver al inicio</Button>
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

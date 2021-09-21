@@ -33,7 +33,7 @@ export const CartProvider = ({children}) => {
     console.log("Carrito de compras", cart);
 
     const totalPrice = () => {
-        return cart.reduce((acc, element) => (acc += element.item.price * element.quantity), 0);
+        return cart.reduce((acc, element) => (acc += element.item.precio * element.quantity), 0);
     };
 
 

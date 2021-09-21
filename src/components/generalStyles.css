@@ -33,3 +33,15 @@
     color: black;
     text-decoration: none;
   }
+
+  .sepBut {
+    margin: 3%;
+  }
+
+  .sepPrice {
+    margin: 1.5%;
+  }
+
+  .sepVolv {
+    padding-left: 2%;
+  }

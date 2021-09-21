@@ -9,25 +9,29 @@ const Cart = () => {
     
     return ( 
         <div className="posCenter">
-            <span>${totalPrice()}</span>
-            {cart.lenght === 0 ? (
-                <>
-                <p>No hay items</p>
-                <Link to="/">
-                    <Button variant="outline-secondary">Volver al inicio</Button>
-                </Link>
-                </>
+            {cart.length === 0 ? (
+                <div className="posCenter">
+                    <h3>No hay items en el carrito</h3>
+                    <Link to="/">
+                        <Button variant="outline-secondary">Volver al inicio</Button>
+                    </Link>
+                </div>
             ) : (
                 cart.map((element) => {
                     return (
-                        <>
-                        <h1>{element.item.nombre}</h1>
-                        <Button variant="outline-secondary" onClick={() => removeItem(element.item.id)}>Borrar</Button>
-                        </>
+                        <div className="posCenter">
+                            <h5>{element.quantity}</h5>
+                            <h5 className="sepPrice">{element.item.nombre}</h5>
+                            <h5>${totalPrice()}</h5>
+                            <Button className="sepBut" variant="outline-secondary" onClick={() => removeItem(element.item.id)}>Borrar</Button>
+
+                            <div className="posCenter">
+                                <Button variant="outline-secondary" onClick={clear}>Borrar todo</Button>
+                            </div>
+                        </div>
                     )
                 })
             )}
-            <Button variant="outline-secondary" onClick={clear}>Borrar todo</Button>
         </div>
      );
 }

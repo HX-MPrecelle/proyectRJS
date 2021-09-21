@@ -29,12 +29,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <>
             <div className="justify-content-md-center posCount">
             <Button variant="outline-secondary" onClick={restar}>-</Button>
-            <p>{contador}</p>
+            <p className="sepBut">{contador}</p>
             <Button variant="outline-secondary" onClick={sumar}>+</Button>
             </div>
-
-          
-            <div>
+            <div className="posCenter">
                 <Button variant="outline-secondary" disabled={stock > 0 ? false : true} onClick={agregar}>Agregar al carrito</Button>
             </div>
         </>    
