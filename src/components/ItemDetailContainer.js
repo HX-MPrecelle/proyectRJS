@@ -31,7 +31,7 @@ const getItems = () => {
             {id: 21, destacado: true, nombre:'Placa De Video Radeon RX 6900 XT 16Gb Asrock Phantom Gaming D OC', categoryId: 'placas-de-video', precio: 315000, description: 'Esta es la descripción del producto', stock: 2},
             {id: 22, destacado: true, nombre:'Fuente Corsair VS500 500W 80 Plus White', categoryId: 'fuentes', precio: 7000, description: 'Esta es la descripción del producto', stock: 4},
             {id: 23, destacado: true, nombre:'Fuente Thermaltake Smart 600W 80 Plus White', categoryId: 'fuentes', precio: 6000, description: 'Esta es la descripción del producto', stock: 4},
-            {id: 24, destacado: true, nombre:'Fuente Thermaltake Smart BX1 750W 80 Plus Bronze', categoryId: 'fuentes', precio: 11000, description: 'Esta es la descripción del producto', stock: 3},
+            {id: 24, destacado: false, nombre:'Fuente Thermaltake Smart BX1 750W 80 Plus Bronze', categoryId: 'fuentes', precio: 11000, description: 'Esta es la descripción del producto', stock: 3},
             {id: 25, destacado: true, nombre:'Cooler Cpu Watercooler Asusun aog Ryuo 120 125W', categoryId: 'refrigeracion-pc', precio: 35000, description: 'Esta es la descripción del producto', stock: 3},
             {id: 26, destacado: false, nombre:'Cooler Cpu Watercooler Gamemax Icechill 240 Argb', categoryId: 'refrigeracion-pc', precio: 15000, description: 'Esta es la descripción del producto', stock: 4},
             {id: 27, destacado: false, nombre:'Cooler Cpu Watercooler Asus Tuf LC 120 Rgb 125 W', categoryId: 'refrigeracion-pc', precio: 16000, description: 'Esta es la descripción del producto', stock: 3}

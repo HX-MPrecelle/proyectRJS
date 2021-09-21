@@ -1,12 +1,19 @@
-import Item from './Item'
+import Item from "./Item";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 const ItemList = (props) => {
 
     return ( 
-            <ul>
-                {props.products.map(element => <Item key={element.id} item={element} />)}
-            </ul>    
-    );
-}
- 
+        <Container>
+        <h2 className="posCenter">Todos los productos</h2>
+      <Row>
+        {props.products.map((element) => (
+          <Item key={element.id} item={element} />
+        ))}
+      </Row>
+    </Container>
+  );
+};
+
 export default ItemList;
