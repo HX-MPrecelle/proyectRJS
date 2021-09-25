@@ -3,12 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
-import idImg from '../img/id1.jpeg';
 import ItemCount from './ItemCount';
-import './generalStyles.css'
 import { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
+import './generalStyles.css'
 
 const ItemDetail = ({ data }) => {
 
@@ -25,11 +24,11 @@ const ItemDetail = ({ data }) => {
           <Row>
             <Col className="posCenter">
               <Card style={{ width: "20vw" }}>
-                <Card.Img variant="top" src={idImg} />
+                <Card.Img variant="top" src={data.imageUrl} />
                 <Card.Body key={data.id}>
-                  <Card.Title>{data.nombre}</Card.Title>
+                  <Card.Title>{data.title}</Card.Title>
                   <Card.Text>{data.description}</Card.Text>
-                  <Card.Title>${data.precio}</Card.Title>
+                  <Card.Title>${data.price}</Card.Title>
                   {!terminar ? (
                     <ItemCount stock={data.stock} initial={1} onAdd={onAdd} />
                   ) : (

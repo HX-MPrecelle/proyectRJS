@@ -21,7 +21,7 @@ const Cart = () => {
                     return (
                         <div className="posCenter">
                             <h5>{element.quantity}</h5>
-                            <h5 className="sepPrice">{element.item.nombre}</h5>
+                            <h5 className="sepPrice">{element.item.title}</h5>
                             <h5>${totalPrice()}</h5>
                             <Button className="sepBut" variant="outline-secondary" onClick={() => removeItem(element.item.id)}>Borrar</Button>
 

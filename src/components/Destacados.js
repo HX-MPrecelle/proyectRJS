@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 
-const Destacados = ({ dataToShow }) => {
+const Destacados = ({ dataToShow}) => {
     return (
       <>
         <Container fluid="md">
@@ -21,9 +21,9 @@ const Destacados = ({ dataToShow }) => {
                         src="https://placehold.co/150x150"
                       />
                       <Card.Body key={element.id}>
-                        <Card.Title>{element.nombre}</Card.Title>
+                        <Card.Title>{element.title}</Card.Title>
                         <Card.Text>{element.description}</Card.Text>
-                        <Card.Title>${element.precio}</Card.Title>
+                        <Card.Title>${element.price}</Card.Title>
                       </Card.Body>
                     </Card>
                   </Col>
