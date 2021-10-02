@@ -10,7 +10,7 @@ import "./generalStyles.css";
 const ItemListContainer = () => {
   const [dataToShow, setDataToShow] = useState([]);
   const [products, setProducts] = useState([]);
-  const { categoryId, destacado } = useParams();
+  const { categoryId } = useParams();
 
   useEffect(() => {
     //Referencia de la "base de datos"
